@@ -678,7 +678,7 @@ const ExploreProperties = ({ filters = {} }) => {
         <div className="min-h-screen bg-[#2d2d2d] py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-full sm:max-w-7xl mx-auto mb-8 sm:mb-12 text-center">
                 <h1 className="mobile-title-text text-3xl font-[Montserrat] sm:text-4xl md:text-5xl font-black mb-3 sm:mb-4 bg-gradient-to-r from-[#c2c6cb] via-[#c99913] to-[#c2c6cb] bg-clip-text text-transparent animate-pulse">
-                    Explore Premium Properties
+                    Explore Premium Properties Deploy
                 </h1>
                 <div className="h-1 bg-gradient-to-r from-transparent via-[#c99913] to-transparent rounded-full animate-pulse"></div>
                 <p className="mobile-subtitle-text text-[#c2c6cb] text-sm font-[sans-serif] sm:text-lg max-w-full sm:max-w-2xl mx-auto mt-2 font-[Inter] explore-properties-maincontent">
