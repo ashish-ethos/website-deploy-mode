@@ -1,34 +1,33 @@
-name: Deploy React App to Netlify
+name: Deploy to Netlify
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches:
+      - main   # Deploy only when pushing to main branch
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Build project
         run: npm run build
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2.1
+        uses: netlify/actions/cli@v2
         with:
-          publish-dir: ./build
-          production-deploy: true
+          args: deploy --dir=dist --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

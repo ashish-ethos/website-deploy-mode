@@ -292,7 +292,7 @@ function DifferentCities() {
               <div className="relative z-10 flex items-center gap-3 sm:gap-4 text-gray-100 group-hover:text-yellow-100 transition-colors duration-300">
                 <RiMapPin2Line className="group-hover:scale-125 group-hover:text-yellow-300 transition-transform duration-300" size={16} />
                 <span className="tracking-wide cursor-pointer group-hover:text-yellow-200 group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">
-                  Explore Properties by Cities
+                  Explore Properties by Cities 
                 </span>
                 <RiArrowRightLine className="group-hover:translate-x-2 group-hover:rotate-12 text-yellow-300 transition-all duration-300" size={16} />
               </div>
